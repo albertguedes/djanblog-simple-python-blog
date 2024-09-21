@@ -2,7 +2,7 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/albertguedes/djanblog-simple-python-blog)
 ![GitHub License](https://img.shields.io/github/license/albertguedes/djanblog-simple-python-blog)
 
-# DjanBlog - A simple blog made with Django Framework
+![djanblog](docs/images/logo.png)
 
 This project is a simple blog made with Django Framework.
 It uses bootstrap and jquery, so it's fully responsive.

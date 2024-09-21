@@ -1,8 +1,19 @@
+[![Stargazers](https://img.shields.io/github/stars/djanblog/djanblog?style=social)](https://github.com/djanblog/djanblog/stargazers)
+[![Forks](https://img.shields.io/github/forks/djanblog/djanblog?style=social)](https://github.com/djanblog/djanblog/network/members)
+[![Watchers](https://img.shields.io/github/watchers/djanblog/djanblog?style=social)](https://github.com/djanblog/djanblog/watchers)
+
 # DjanBlog - A simple blog made with Django Framework
 
 This project is a simple blog made with Django Framework.
 It uses bootstrap and jquery, so it's fully responsive.
 Come with a SQLITE3 database as sample.
+
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Django](https://img.shields.io/badge/django-092E20?style=for-the-badge&logo=django&logoColor=ffdd54)
+![SQLite3](https://img.shields.io/badge/sqlite3-000000?style=for-the-badge&logo=sqlite3&logoColor=ffdd54)
+![pytest-django](https://img.shields.io/badge/pytest-django-FFDD54?style=for-the-badge&logo=pytest-django&logoColor=000000)
+![Bootstrap](https://img.shields.io/badge/bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+![jQuery](https://img.shields.io/badge/jquery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)
 
 ## Requirements
 

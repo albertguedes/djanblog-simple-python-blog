@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact{% endblock %}
+
+{% block header %}
+<div class="pt-4 pb-5" >
+    <h6 class="text-muted pb-3" >
+        <a class="text-decoration-none text-success h6" href="{% url 'home' %}" >&laquo; Voltar </a>
+    </h6>
+    <br>
+    <h1 class="page-title h1 my-5" >
+        <span class="bg-success text-white px-2 py-3" >Contact</span>
+    </h1>
+</div>
+{% endblock %}
+
+{% block content %}
+<form class="row g-3" method="POST" >
+    {% csrf_token %}
+    <div class="col-md-6">
+        <label for="inputEmail" class="form-label">Email</label>
+        <input type="email" class="form-control" id="inputEmail" name="email" placeholder="ex: jose@mail.com" >
+        {% if form.email.errors %}
+            <div class="invalid-feedback d-block">
+                {% for error in form.email.errors %}
+                    {{ error }}
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+    <div class="col-md-6">
+        <label for="inputName" class="form-label">Name</label>
+        <input type="text" class="form-control" id="inputName" name="name" placeholder="ex: josé da silva" >
+        {% if form.name.errors %}
+            <div class="invalid-feedback d-block">
+                {% for error in form.name.errors %}
+                    {{ error }}
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+    <div class="col-md-12">
+        <label for="inputSubject" class="form-label">Subject</label>
+        <input type="text" class="form-control" id="inputSubject" name="subject" placeholder="ex: Compras do mês" >
+        {% if form.subject.errors %}
+            <div class="invalid-feedback d-block">
+                {% for error in form.subject.errors %}
+                    {{ error }}
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+    <div class="col-12">
+        <label for="inputMessage" class="form-label">Message</label>
+        <textarea class="form-control" id="inputMessage" name="message" rows="10"></textarea>
+        {% if form.message.errors %}
+            <div class="invalid-feedback d-block">
+                {% for error in form.message.errors %}
+                    {{ error }}
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+    <div class="col-12 text-center">
+        <button type="submit" class="btn btn-lg btn-success">Send Message</button>
+    </div>
+</form>
+{% endblock %}

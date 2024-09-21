@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block header %}
+    <div class="px-0 py-5" >
+        <h1 class="h1 my-5" >
+            <span class="bg-success text-white px-2 py-3" >Django Blog</span>
+        </h1>
+    </div>
+{% endblock %}
+
+{% block content %}
+    {% for post in posts %}
+    <div class="row pb-4">
+        <div class="col-3 text-end">    
+            <span class="h5" >{{ post.created_at|date:"Y-M-d" }}</span>
+        </div>
+        <div class="col-9">    
+            <h2 class="h5" >
+                <a class="text-decoration-none text-success text-capitalize fw-bold" href="{% url 'post' post.id %}" >
+                    {{ post.title|capfirst }}
+                </a>
+            </h2>
+        </div>
+    </div>
+    {% endfor %}
+{% endblock %}

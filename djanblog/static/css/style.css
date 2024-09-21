@@ -1,0 +1,15 @@
+body {
+    font-family: 'Verdana', 'Arial', sans-serif;
+}
+
+.h1 {
+    font-weight: bolder;
+}
+
+.displacement {
+    margin-left: -25px;                
+}
+
+.page-title {
+    line-height: 5.1rem;
+}

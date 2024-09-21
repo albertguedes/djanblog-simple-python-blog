@@ -1,6 +1,6 @@
-[![Stargazers](https://img.shields.io/github/stars/djanblog/djanblog?style=social)](https://github.com/djanblog/djanblog/stargazers)
-[![Forks](https://img.shields.io/github/forks/djanblog/djanblog?style=social)](https://github.com/djanblog/djanblog/network/members)
-[![Watchers](https://img.shields.io/github/watchers/djanblog/djanblog?style=social)](https://github.com/djanblog/djanblog/watchers)
+![GitHub language count](https://img.shields.io/github/languages/count/albertguedes/djanblog-simple-python-blog)
+![GitHub top language](https://img.shields.io/github/languages/top/albertguedes/djanblog-simple-python-blog)
+![GitHub License](https://img.shields.io/github/license/albertguedes/djanblog-simple-python-blog)
 
 # DjanBlog - A simple blog made with Django Framework
 

@@ -6,7 +6,7 @@
 {% block header %}
 <div class="pt-4 pb-5" >
     <h6 class="text-muted pb-5" >
-        <a class="text-decoration-none text-success h6" href="{% url 'home' %}" >&laquo; Voltar </a> | Postado em <span class="fst-italic" >{{ post.created_at|date:"d \d\e F \d\e Y" }}</span>
+        <a class="text-decoration-none text-success h6" href="{% url 'home' %}" >&laquo; Return </a> | Created At <span class="fst-italic" >{{ post.created_at|date:"d \d\e F \d\e Y" }} By <em>{{ post.author }}</em></span>
     </h6>
     <h1 class="page-title h1 my-5" >
         <span class="bg-success text-white text-capitalize px-2 py-3 mb-5" >{{ post.title }}</span>
@@ -16,6 +16,6 @@
 
 {% block content %}
 <div class="lead" class="py-5" >
-    {{ post.content }}
+    {{ post.content|safe }}
 </div>
 {% endblock %}

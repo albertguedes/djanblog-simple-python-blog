@@ -5,7 +5,7 @@
 {% block header %}
 <div class="pt-4 pb-5" >
     <h6 class="text-muted pb-3" >
-        <a class="text-decoration-none text-success h6" href="{% url 'home' %}" >&laquo; Voltar </a>
+        <a class="text-decoration-none text-success h6" href="{% url 'home' %}" >&laquo; Return </a>
     </h6>
     <br>
     <h1 class="page-title h1 my-5" >
@@ -30,7 +30,7 @@
     </div>
     <div class="col-md-6">
         <label for="inputName" class="form-label">Name</label>
-        <input type="text" class="form-control" id="inputName" name="name" placeholder="ex: josé da silva" >
+        <input type="text" class="form-control" id="inputName" name="name" placeholder="ex: jose da silva" >
         {% if form.name.errors %}
             <div class="invalid-feedback d-block">
                 {% for error in form.name.errors %}
@@ -41,7 +41,7 @@
     </div>
     <div class="col-md-12">
         <label for="inputSubject" class="form-label">Subject</label>
-        <input type="text" class="form-control" id="inputSubject" name="subject" placeholder="ex: Compras do mês" >
+        <input type="text" class="form-control" id="inputSubject" name="subject" placeholder="ex: Hello there" >
         {% if form.subject.errors %}
             <div class="invalid-feedback d-block">
                 {% for error in form.subject.errors %}

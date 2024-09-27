@@ -1,3 +1,4 @@
+{% load static %}
 <div class="py-5">
     <ul class="list-group list-group-horizontal justify-content-center mb-3">
         <li class="list-group-item border-0">
@@ -10,5 +11,9 @@
             <a class="list-group-link text-dark" href="{% url 'contact' %}">Contact</a>
         </li>
     </ul>                            
-    <p class="text-center mb-0">&copy; 2024 Django Blog - Free and Open Source Software. MIT License.</p>
+    <p class="text-center mb-0">&copy; 2024 DjanBlog - Free and Open Source Software. 
+        <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener noreferrer">
+            <img src="{% static 'img/legal-license-mit.png' %}" width="50" height="50" alt="MIT License" title="MIT License" loading="lazy" />
+        </a>
+    </p>
 </div>

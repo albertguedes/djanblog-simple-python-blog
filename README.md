@@ -42,7 +42,7 @@ This blog contains:
 First, clone the repository from github:
 
 ```
-git clone https://github.com/josé-da-silva/djanblog.git
+git clone https://github.com/albertguedes/djanblog.git
 ```
 
 Go to the project directory:

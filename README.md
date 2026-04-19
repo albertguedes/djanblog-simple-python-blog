@@ -1,121 +1,37 @@
-![GitHub language count](https://img.shields.io/github/languages/count/albertguedes/djanblog-simple-python-blog)
-![GitHub top language](https://img.shields.io/github/languages/top/albertguedes/djanblog-simple-python-blog)
-![GitHub License](https://img.shields.io/github/license/albertguedes/djanblog-simple-python-blog)
+# Djanblog
 
-![djanblog](docs/images/logo.svg)
-
-This project is a simple blog made with Django Framework.
-It uses bootstrap and jquery, so it's fully responsive.
-Come with a SQLITE3 database as sample.
-
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Django](https://img.shields.io/badge/django-092E20?style=for-the-badge&logo=django&logoColor=ffdd54)
-![pytest-django](https://img.shields.io/badge/pytest-django-FFDD54?style=for-the-badge&logo=pytest-django&logoColor=000000)
-
-![SQLite3](https://img.shields.io/badge/sqlite3-000000?style=for-the-badge&logo=sqlite3&logoColor=ffdd54)
-![Bootstrap](https://img.shields.io/badge/bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
-![jQuery](https://img.shields.io/badge/jquery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)
-
-## Requirements
-
-- Python 3
-- Django 5.0.9
-- SQLite3
-- pytest-django 
-- Faker for python
+A simple blog built with **Django**, Bootstrap, and jQuery. Features include post management, categories, contact form, and a populate command for testing with fake data.
 
 ## Features
 
-This blog contains:
+- **Public pages**: Home (latest posts), post viewing, about, contact
+- **Admin dashboard**: Post and category management
+- **Content**: Categories, posts with rich text
+- **Testing**: Fake data population via Django management command
+- **Contact**: Email contact form
 
-- A home page that list all posts
-- A post page to show a post 
-- An about page
-- A contact page with a form to send an email
-- A success page after sending an email
-- An error page when an error occurs
-- An custom "populate" command to populate the database with fake posts
-- Was used bootstrap 5.3.3 and Jquery 3.7.1 for the frontend
+## Tech Stack
+
+- Django 5.x
+- Bootstrap 5.x
+- jQuery 3.x
+- SQLite (dev)
 
 ## Installation
 
-First, clone the repository from github:
-
-```
-git clone https://github.com/albertguedes/djanblog.git
-```
-
-Go to the project directory:
-
-```
-cd djanblog
-```
-
-Create a virtual environment:
-
-```
+```bash
+git clone https://github.com/albertguedes/djanblog-simple-python-blog.git
+cd djanblog-simple-python-blog
 python -m venv venv
-```
-
-Activate the virtual environment:
-
-```
-source venv/bin/activate
-```
-
-Install Django:
-
-``` 
-pip install django
-```
-
-Then, install the dependencies:
-
-```
+source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
-```
-
-Run the migrations:
-
-```
-python manage.py makemigrations
 python manage.py migrate
-```
-
-Populate the database:
-
-```
-python manage.py populate
-```
-
-Then, run the server:
-
-```
+python manage.py populate   # Populate with fake posts
 python manage.py runserver
 ```
 
-Open http://127.0.0.1:8000 in your browser and you should see the home page.
+Access at `http://127.0.0.1:8000`
 
-## Usage 
+## License
 
-This project is simple enought to be expanded to your needs.
-Any doubt or feedback is welcome.
-
-## Tests
-
-If you do some modifications on project, add or alter the tests with that come 
-with the project, and run with the following command:
-
-```
-python manage.py test
-```
-
-## References
-
-- Python Project: https://python.org/
-- Django Project: https://www.djangoproject.com/
-- SQLITE3: https://www.sqlite.org/
-- Bootstrap: https://getbootstrap.com/
-- Jquery: https://jquery.com/
-- Faker: https://faker.readthedocs.io/en/master
-- pytest-django: https://pytest-django.readthedocs.io/en/latest
+MIT License - see [LICENSE](LICENSE)
